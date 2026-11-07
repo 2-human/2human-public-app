@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hub</title>
+<link rel="stylesheet" href="chassis/hub-core.css">
+<link rel="stylesheet" href="chassis/hub-modules.css">
+</head>
+<body class="app-body">
+<a class="hub-skip" id="app-skip" href="#" data-skip></a>
+<header class="app-bar" id="app-bar">
+  <button class="app-menu" id="app-menu" type="button" aria-expanded="false" aria-controls="app-nav">&#9776;</button>
+  <a class="brand" id="app-brand" href="#"></a>
+  <div class="bar-right" id="app-right"></div>
+</header>
+<div class="app-grid">
+  <nav class="app-nav" id="app-nav">
+    <input class="app-filter" id="app-filter" type="search">
+    <div id="app-tree"></div>
+  </nav>
+  <main class="app-main" id="app-main" tabindex="-1"></main>
+</div>
+<div class="app-scrim" id="app-scrim" hidden></div>
+<aside class="app-drawer" id="app-drawer" aria-hidden="true" aria-labelledby="drawer-title" inert>
+  <div class="drawer-head">
+    <div class="drawer-nav"><button class="drawer-arrow" id="drawer-back" type="button" disabled>&larr;</button><button class="drawer-arrow" id="drawer-fwd" type="button" disabled>&rarr;</button></div>
+    <div class="drawer-id"><h2 id="drawer-title"></h2><div class="drawer-sub" id="drawer-sub"></div></div>
+    <button class="linkbtn" id="drawer-copy" type="button" data-copy></button>
+    <button class="drawer-close" id="drawer-close" type="button">&times;</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<div class="hub-status" id="hub-status" role="status" aria-live="polite"></div>
+<main id="gate" hidden>
+  <form id="gate-form" autocomplete="off">
+    <h1 id="gate-title"></h1>
+    <p id="gate-prompt"></p>
+    <label for="gate-pw" id="gate-label"></label>
+    <input id="gate-pw" type="password" required autocomplete="current-password">
+    <button type="submit" disabled></button>
+    <p id="gate-msg" role="status" aria-live="polite"></p>
+    <button type="button" id="gate-retry" hidden></button>
+  </form>
+</main>
+<script src="hub.config.js"></script>
+<script src="gate.js"></script>
+</body>
+</html>

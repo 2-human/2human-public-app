@@ -1,0 +1,24 @@
+/* Admin hub additions on top of the chassis styles: the Requests table's result column and the grant form. */
+pre.result { white-space: pre-wrap; word-break: break-word; max-width: 48ch; max-height: 12em; overflow: auto; margin: 0; font-size: 12px; }
+form.grant { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: end; margin: 0 0 16px; }
+form.grant h3 { flex-basis: 100%; margin: 0; }
+form.grant label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+form.grant input, form.grant select { padding: 6px 8px; border: 1px solid var(--hub-line); border-radius: 6px; background: var(--hub-bg); color: var(--hub-ink); }
+/* operations forms (ops.js) */
+.op-form { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px 14px; }
+.op-field { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.op-field > span { color: var(--hub-mute); }
+.op-wide, .op-actions { grid-column: 1 / -1; }
+.op-form input, .op-form select, .op-form textarea { padding: 6px 8px; border: 1px solid var(--hub-line); border-radius: 6px; background: var(--hub-bg); color: var(--hub-ink); font: inherit; min-width: 0; }
+.op-rows { display: flex; flex-direction: column; gap: 6px; }
+.op-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.op-row select, .op-row input { flex: 1 1 140px; }
+.op-line input[data-k="description"] { flex: 3 1 220px; }
+.op-actions { display: flex; gap: 12px; align-items: center; margin-top: 4px; }
+.linkbtn.danger { color: #b42318; }
+.pre { white-space: pre-wrap; }
+/* the settlement form (ops.js): two small number fields side by side */
+.op-settle .op-row { align-items: flex-end; }
+.op-settle .op-field { flex: 1 1 220px; }
+.op-settle .op-field input { flex: none; padding: 6px 8px; border: 1px solid var(--hub-line); border-radius: 6px; background: var(--hub-bg); color: var(--hub-ink); font: inherit; }
+.op-upload { cursor: pointer; display: inline-block; }

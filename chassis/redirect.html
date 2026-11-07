@@ -1,0 +1,12 @@
+<!doctype html>
+<!-- Old-page redirect (C8). Publish one copy under each retired file name, with data-to set to the page's new place. The
+     incoming hash is kept: an old link to old.html#section lands on index.html#section, where Hub.legacy maps it. -->
+<html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Moved</title>
+<script data-to="index.html#/">
+(function () {
+  var s = document.currentScript, to = s.getAttribute('data-to'), h = location.hash;
+  location.replace(h && h !== '#' ? to.split('#')[0] + h : to);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=index.html"></noscript>
+</head><body></body></html>
