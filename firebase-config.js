@@ -8,5 +8,6 @@ window.FIREBASE_CONFIG = {
   "projectId": "app-2human",
   "storageBucket": "app-2human.firebasestorage.app",
   "messagingSenderId": "995132795386",
-  "appId": "1:995132795386:web:e77d4f93c838bd409b9c43"
+  "appId": "1:995132795386:web:e77d4f93c838bd409b9c43",
+  "appCheckSiteKey": "6LdHhRYuAAAAAPiehmyogWKK75d8jsqT_LkNKuHd"
 };
